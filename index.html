@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Tic Tac Toe | Premium Game Experience</title>
+    <meta name="description"
+        content="The most engaging Tic Tac Toe experience with stunning visuals and smooth gameplay">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Righteous&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <div class="app-container">
+        <header class="game-header">
+            <h1><span class="logo-x">X</span> <span class="logo-o">O</span> <span class="logo-text">TIC-TAC-TOE</span></h1>
+            <div class="header-controls">
+                <button id="themeToggle" class="control-btn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="game-stats">
+            <div class="player-card player-x">
+                <div class="player-icon"><i class="fas fa-times"></i></div>
+                <div class="player-score">0</div>
+                <div class="player-name">Player X</div>
+            </div>
+
+            <div class="game-status">
+                <div id="gameStatus">Your turn, X!</div>
+                <div class="game-timer">00:00</div>
+            </div>
+
+            <div class="player-card player-o">
+                <div class="player-icon"><i class="far fa-circle"></i></div>
+                <div class="player-score">0</div>
+                <div class="player-name">Player O</div>
+            </div>
+        </div>
+
+        <div id="board" class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+            <div id="winningLine" class="winning-line"></div>
+        </div>
+
+        <div class="game-actions">
+            <button id="restartButton" class="action-btn primary">
+                <i class="fas fa-redo"></i> New Game
+            </button>
+            <button id="howToPlayBtn" class="action-btn secondary">
+                <i class="fas fa-question-circle"></i> How to Play
+            </button>
+        </div>
+
+        <div class="powered-by">
+            <span>Powered by</span>
+            <div class="logo">FUNNY VIBE <span>GAMES</span></div>
+        </div>
+    </div>
+
+    <div id="confetti" class="confetti-container"></div>
+
+    <!-- Modal -->
+    <div id="howToPlayModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>How to Play</h2>
+            <div class="modal-body">
+                <div class="instruction">
+                    <div class="instruction-icon"><i class="fas fa-times"></i></div>
+                    <p>Player X goes first. Click any empty square to place your mark.</p>
+                </div>
+                <div class="instruction">
+                    <div class="instruction-icon"><i class="far fa-circle"></i></div>
+                    <p>Player O goes next. Alternate turns until someone wins.</p>
+                </div>
+                <div class="instruction">
+                    <div class="instruction-icon"><i class="fas fa-trophy"></i></div>
+                    <p>First to get 3 in a row (horizontally, vertically, or diagonally) wins!</p>
+                </div>
+                <button class="action-btn primary got-it-btn">Got it!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
