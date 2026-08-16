@@ -1,11 +1,17 @@
-# 🎮 Tic Tac Toe Game
+ 🎮 Tic Tac Toe Game
 
 A simple and interactive **Tic Tac Toe** game built using **HTML, CSS, and JavaScript**.
 
 The game includes **Light/Dark Mode**, a **game timer**, winner detection, draw detection, and restart functionality.
 
 
-🚀 Features
+ 🌐 Live Demo
+
+👉 **[Play Tic Tac Toe](https://tic-tac-toe-roj.netlify.app/)**
+
+
+
+ 🚀 Features
 
 * 🎮 Two-player gameplay
 * ❌ Player X and ⭕ Player O
@@ -59,9 +65,9 @@ tic-tac-toe/
 8. Click **New Game** to start a fresh game.
 9. Use the theme toggle to switch between **Light Mode** and **Dark Mode**.
 
-
-
-⏱️ Game Timer
+ 
+ 
+ ⏱️ Game Timer
 
 The game includes a timer to track the duration of each match.
 
@@ -72,19 +78,26 @@ The game includes a timer to track the duration of each match.
 * Stops when the game ends in a draw
 * Resets when a new game starts
 
-🌞🌙 Light & Dark Mode
+
+ 🌞🌙 Light & Dark Mode
 The game supports two themes for a better user experience:
 
-☀️ Light Mode
+ ☀️ Light Mode
 Provides a clean and bright interface.
 
-🌙 Dark Mode
+ 🌙 Dark Mode
 Provides a darker interface for comfortable gameplay in low-light environments.
 
 Users can easily switch between the two themes using the theme toggle button.
 
 
  
+ 📸 Game Preview
+
+![Tic Tac Toe Game](tic-tac-toe.png)
+
+
+
  💻 How to Run
 
 No installation or additional dependencies are required.
@@ -106,6 +119,7 @@ cd tic-tac-toe
 Open the `index.html` file in any modern web browser.
 
 
+ 
  🧠 What I Learned
 
 Through this project, I practiced:
